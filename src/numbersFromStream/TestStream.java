@@ -7,6 +7,7 @@ import java.util.stream.Stream;
 
 public class TestStream {
     public static void main(String[] args) {
+
         Stream<Integer> numbers = Stream.iterate(8, number -> number + 1);
 
         numbers.filter(new Predicate<Integer>() {
